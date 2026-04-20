@@ -27,10 +27,10 @@ public class PruebaPerfilMedico {
         System.out.print("Ingrese año de nacimiento: ");
         int anio = Integer.parseInt(sc.nextLine());
 
-        System.out.print("Ingrese altura (en cm, ej: 175): ");
+        System.out.print("Ingrese altura en cm: ");
         double altura = Double.parseDouble(sc.nextLine());
 
-        System.out.print("Ingrese peso (en kg, ej: 70.5): ");
+        System.out.print("Ingrese peso en kg: ");
         double peso = Double.parseDouble(sc.nextLine());
 
         PerfilMedico paciente = new PerfilMedico(nombre, apellido, sexo, dia, mes, anio, altura, peso);
@@ -43,7 +43,7 @@ public class PruebaPerfilMedico {
         System.out.println("Frecuencia máxima: " + paciente.frecuenciaMaxima());
         System.out.println("Rango esperado: " + paciente.rangoFrecuencia());
 
-        System.out.printf("BMI (Índice de Masa Corporal): %.2f\n", paciente.calcularBMI());
+        System.out.printf("BMI (Índice de Masa Corporal): \n", paciente.calcularBMI());
 
         System.out.println("\n--- VALORES DE BMI ---");
         System.out.println("Bajo peso: menos de 18.5");
